@@ -1,0 +1,165 @@
+.image{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(43, 56, 33);
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.words{
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+#back, #next{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
+}
+#picturesOne{
+    width: 700px;
+    }
+    
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#showTotalAmountToPay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#billSplit, #billOption, #totalAmount, #totalPerPerson{
+    background-color: rgb(199, 211, 144);
+    color: black;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+#btnCalc{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(250, 145, 107);
+    font-size: 15px;
+}
+
+#services{
+    display: none;
+}
+input{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+
+#addServ{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.btn{
+    background-color: rgb(43, 56, 33);
+    border: none;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.boat{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("/image/9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 5%;
+}
+
+h3{
+    color: aliceblue;
+    font-size: 90px;
+    font-family: 'Pinyon Script', cursive;
+}
+
+@media all and (max-width: 800px){
+    #picturesOne{
+        width: 250px;
+        }
+    #back, #next{
+        font-size: 25px;
+        }
+    h1,h3{
+        font-size: 30px;
+        }
+
+        #box{
+            margin: 2px;
+        }
+        
+        
+        .words{
+        font-size: 15px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        #container{
+            margin-left: 2px;
+        }
+
+    #billSplit, #billOption, #totalAmount, #totalPerPerson{
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+        }
+}
+
+
+
+

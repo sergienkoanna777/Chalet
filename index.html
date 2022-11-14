@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto&display=swap" rel="stylesheet">
+
+<body>
+<img class="image" src="/image/headerimg.jpg" alt="">
+<div class="header">
+    <div>
+<h1>Relax in a cozy chalet</h1>
+</div>
+<p class="words">Are you looking for a place where you can spend a wonderful time with your family or friends?</p>
+<p class="words">Then you will definitely like our large and cozy chalet!</p>
+<p class="words">It is located on the shore of a beautiful lake and surrounded by wild nature.</p>
+<p class="words">Our prices will pleasantly surprise you: only $200 per night for an unforgettable vacation.</p>
+<p class="words">Our chalet can confortably sleep 12 people.</p>
+</div>
+<br>
+<hr>
+<div class="header">
+        <h2>We invite you to see photos of our chalet and calculate your bill.</h2>
+        </div>
+    <div id="box">
+        <button id="back" class="btn">Back</button>
+        <img id="picturesOne" src="/image/1.jpg" alt="chalet">
+        <button id="next" class="btn">Next</button>
+
+<div id="container">
+    <h2> Let's split your bill:</h2>
+    <p>Number of nights <i>(Flat rate: $200 per night)</i></p>
+    <span>🔅
+        <input type="text" id="night" placeholder="How many nights?">
+    </span>
+    <p>Number of people</p>
+    <span>😎
+        <input type="text" id="people" placeholder="How many people?">
+    </span>
+    <p>⛱️Do you want additional services?⛵</p>
+    <button id="addServ">Additional services</button>
+    <form>
+        <select id="services">
+            <option disabled>Select an option</option>
+            <option selected value="20">Breakfast (20$/day/person)</option>
+            <option value="15">Boat (15$/day/person)</option>
+            <option value="25">Canoe (25$/day/person)</option>
+            <option value="30">Breakfast + Boat (30$/day/person)</option>
+            <option value="40">Breakfast + Canoe (40$/day)</option>
+            <option value="0">None.</option>
+        </select>
+        <button id="btnCalc">Calculate</button>
+    </form>
+    <div id="showTotalAmountToPay">
+        <div id="billSplit">
+            <p>Chalet</p>
+            <span>$</span>
+            <span id="dividedBill"></span>
+        </div>
+        <div id="billOption">
+            <p>Service</p>
+            <span>$</span>
+            <span id="dividedOption"></span>
+        </div>
+       
+        <div id="totalAmount">
+            <p>Total</p>
+            <span>$</span>
+            <span id="billAndService"></span>
+        </div>
+
+        <div id="totalPerPerson">
+            <p>Per person</p>
+            <span>$</span>
+            <span id="billPerPerson"></span>
+        </div>
+    </div>
+    
+</div>
+</div>
+<br>
+
+
+<div class="boat">
+  <h3>Have a good week-end!</h3>
+</div>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
